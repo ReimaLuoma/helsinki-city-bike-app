@@ -1,0 +1,100 @@
+$bg-main: #8cc487;
+$font-color: #59595a;
+
+/*
+Font: Work Sans
+Styles:
+    ExtraLight 200 Italic
+    Regular 400 Italic
+    ExtraBold 800 Italic
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,200;1,400;1,800&display=swap');
+
+html {
+    background-color: $bg-main;
+    color: $font-color;
+
+    font-size: 67.5%;
+    font-family: 'Work Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    float: none;
+
+    overflow: hidden;
+}
+
+body {
+    font-size: 1.6em;
+}
+
+/* HEADERS */
+
+h1 {
+    font-size: 6em;
+    font-style: italic;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2.2em;
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* LOGO */
+
+.logo-base {
+    background-color: whitesmoke;
+    height:  25vh;
+    width: 101vw;
+    margin: 5vh 0 0 -1vw;
+}
+
+.logo-img {
+    background-image: url('../assets/helsinki_silhouette.png');
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:  25vh;
+    width: 101vw;
+    margin: 5vh 0 0 -1vw;
+    opacity: 10%;
+}
+
+.logo-base img {
+    transform: scale(.25);
+    margin: -43.8em 0 0 -45em;
+}
+
+/* CARD */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: whitesmoke;
+    width:25rem;
+    height: fit-content;
+    margin: 10rem 2em 0 0;
+    padding: 0 0 3em 0;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 0.5em 0 0 0;
+}
+
+.card img {
+    transform: scale(1.5);
+    opacity: 67%;
+    margin: 5em auto 1em;
+}
