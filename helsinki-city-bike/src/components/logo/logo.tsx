@@ -1,8 +1,8 @@
-const Logo = ({img}: any) => {
-    return <div className="logo-base">
-        <div className="logo-img"></div>
-        <img src={img} alt="" />
-    </div>
+const Logo = ({img, img2}: any) => {
+    return <div className="logo-base logo-img">
+            <img src={img} alt="" />
+            <img src={img2} alt="" />
+        </div>
 }
 
 export default Logo;

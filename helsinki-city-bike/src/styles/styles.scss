@@ -50,26 +50,21 @@ h3 {
 /* LOGO */
 
 .logo-base {
-    background-color: whitesmoke;
-    height:  25vh;
-    width: 101vw;
-    margin: 5vh 0 0 -1vw;
-}
-
-.logo-img {
     background-image: url('../assets/helsinki_silhouette.png');
+    background-color: white;
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     height:  25vh;
     width: 101vw;
     margin: 5vh 0 0 -1vw;
-    opacity: 10%;
+    display: flex;
+    justify-content: start;
 }
 
 .logo-base img {
-    transform: scale(.25);
-    margin: -43.8em 0 0 -45em;
+    margin: 0 15em;
+    padding: 1em 0;
 }
 
 /* CARD */
