@@ -1,10 +1,11 @@
 import Logo from "../components/logo/logo";
+import Nav from "../components/nav/nav";
 
 const DataImport = () => {
     return(
         <>
         <Logo />
-        <h1>Data import</h1>
+        <Nav />
         </>
     )
 }
