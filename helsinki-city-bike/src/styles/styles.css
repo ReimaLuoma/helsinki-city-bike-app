@@ -75,12 +75,18 @@ h3 {
   text-align: center;
 }
 
-.card h2 {
-  margin: 0.5em 0 0 0;
+.card h3 {
+  color: #ff6f69;
 }
 
 .card img {
   transform: scale(1.5);
   opacity: 67%;
   margin: 5em auto 1em;
+}
+
+/* Error page */
+.error-page {
+  text-align: center;
+  margin: 2em;
 }/*# sourceMappingURL=styles.css.map */
