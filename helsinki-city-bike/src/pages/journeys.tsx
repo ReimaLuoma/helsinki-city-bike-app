@@ -1,10 +1,11 @@
 import Logo from "../components/logo/logo";
+import Nav from "../components/nav/nav";
 
 const Journeys = () => {
     return (
         <>
         <Logo />
-        <h1>Journeys</h1>
+        <Nav />
         </>
     )
 
