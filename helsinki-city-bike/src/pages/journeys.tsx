@@ -1,11 +1,11 @@
 import Logo from "../components/logo/logo";
-import Nav from "../components/nav/nav";
+import PageContainer from "../components/page-container/page-container";
 
 const Journeys = () => {
     return (
         <>
         <Logo />
-        <Nav />
+        <PageContainer />
         </>
     )
 
