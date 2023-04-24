@@ -42,7 +42,7 @@ h3 {
 /* LOGO */
 .logo-base {
   background-image: url("../assets/helsinki_silhouette.png");
-  background-color: white;
+  background-color: whitesmoke;
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -89,6 +89,26 @@ h3 {
 .error-page {
   text-align: center;
   margin: 2em;
+  text-shadow: 1px 1px 0.25em black;
+}
+
+.error-page h1 {
+  color: #ff6f69;
+}
+
+.error-page p {
+  color: whitesmoke;
+}
+
+.error-page i {
+  font-size: 2em;
+  color: #59595a;
+  text-shadow: none;
+}
+
+/* links */
+a {
+  text-decoration: none;
 }
 
 .page-container {
