@@ -7,7 +7,7 @@ const CardContainer = () => {
     return (
     <div className="container">
         <div className='row card-container'>
-            <div className="col d-flex justify-content-center">
+            <div className="col d-flex justify-content-center flex-wrap mobile-card-start">
                 <Card header="data" img={importCSV} alt='' link="data-import"/>
                 <Card header="stations" img={bikeParking} alt='' link="stations"/>
                 <Card header="journeys" img={journey} alt='' link="journeys"/>
