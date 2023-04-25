@@ -5,7 +5,7 @@ import journey from '../../assets/icons8-waypoint-map-100.png'
 
 const CardContainer = () => {
     return (
-    <div className="container-fluid">
+    <div className="container">
         <div className='row card-container'>
             <div className="col d-flex justify-content-center">
                 <Card header="data" img={importCSV} alt='' link="data-import"/>
