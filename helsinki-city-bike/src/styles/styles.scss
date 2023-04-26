@@ -145,18 +145,18 @@ a {
     text-align: center;
 }
 
-.nav-link {
+.nav-container a.active {
     width: 20vw;
     height: 10vh;
-    background-color: $bg-main;
+    background-color: $bg-secondary;
     margin: 0 0 0 -1vw;
     padding: 1em 0;
 }
 
-.nav-link-active {
+.nav-link {
     width: 20vw;
-    height: 30vh;
-    background-color: $bg-secondary;
+    height: 10vh;
+    background-color: $bg-main;
     margin: 0 0 0 -1vw;
     padding: 1em 0;
 }
@@ -227,12 +227,20 @@ a {
         margin: 0;
         display: flex;
     }
+
+    .nav-container a.active {
+        width: fit-content;
+        height: fit-content;
+        background-color: $bg-secondary;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0 1rem;
+        padding: 0;
+    }
     
     .nav-link {
         width: fit-content;
         height: fit-content;
-        background-color: $bg-secondary;
-        text-align: center;
+        background-color: $bg-main;
         border-radius: 1rem 1rem 0 0;
         margin: 0 1rem;
         padding: 0;

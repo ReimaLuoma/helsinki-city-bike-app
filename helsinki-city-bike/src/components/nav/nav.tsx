@@ -8,17 +8,17 @@ const Nav = () => {
 
     return (
         <>
-        <div className='col nav-container'>
-            <NavLink to='/data-import' className={({isActive}) => isActive ? "nav-link-active": "nav-link"}>
+        <nav className='col nav-container'>
+            <NavLink to='/data-import' className="nav-link">
                     <img src={importCSV} alt='' />
             </NavLink>
-            <NavLink to='/stations' className={({isActive}) => isActive ? "nav-link-active": "nav-link"}>
+            <NavLink to='/stations' className="nav-link">
                     <img src={bikeParking} alt='' />
             </NavLink>
-            <NavLink to='/journeys' className={({isActive}) => isActive ? "nav-link-active": "nav-link"}>
+            <NavLink to='/journeys' className="nav-link">
                     <img src={journey} alt='' />
             </NavLink>
-        </div>
+        </nav>
         </>
     )
 }
