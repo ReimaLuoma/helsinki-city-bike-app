@@ -151,11 +151,17 @@ a {
   background-color: whitesmoke;
 }
 
+.test {
+  background-color: aqua;
+}
+
 /* MOBILE */
 @media (hover: none) and (pointer: coarse) {
   .logo-base {
-    width: 105vw;
-    margin: 5vh 0 1rem -2.5vw;
+    width: 100vw;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    margin: 0 0 1rem -2.5vw;
   }
   .logo-img:first-child {
     transform: scale(0.3);
@@ -171,5 +177,36 @@ a {
   .card img {
     transform: scale(1);
     margin: 2rem;
+  }
+  .page-container {
+    justify-content: start;
+  }
+  .nav-container {
+    margin: 0;
+    display: flex;
+  }
+  .nav-link {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: whitesmoke;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 1rem;
+    padding: 0;
+  }
+  .nav-link img {
+    transform: scale(0.5);
+  }
+  .nav-link:hover {
+    background: linear-gradient(to bottom, #ff6f69, whitesmoke 80%);
+  }
+  .action-field-container {
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+    border-radius: 1em;
+    background-color: whitesmoke;
   }
 }/*# sourceMappingURL=styles.css.map */

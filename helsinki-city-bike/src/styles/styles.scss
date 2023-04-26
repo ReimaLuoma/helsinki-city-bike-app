@@ -167,13 +167,18 @@ a {
     background-color: $bg-secondary;
 }
 
+.test {
+    background-color: aqua;
+}
+
 /* MOBILE */
 
 @media (hover: none) and (pointer:coarse) {
 
     .logo-base {
-        width: 105vw;
-        margin: 5vh 0 1rem -2.5vw;
+        width: 100vw;
+        max-height: max-content;
+        margin: 0 0 1rem -2.5vw;
     }
 
     .logo-img:first-child {
@@ -193,5 +198,40 @@ a {
     .card img {
         transform: scale(1);
         margin: 2rem;
+    }
+
+    .page-container {
+        justify-content: start;
+    }
+
+    .nav-container {
+        margin: 0;
+        display: flex;
+    }
+    
+    .nav-link {
+        width: fit-content;
+        height: fit-content;
+        background-color: $bg-secondary;
+        text-align: center;
+        border-radius: 1rem 1rem 0 0;
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+    .nav-link img {
+        transform: scale(.5);
+    }
+
+    .nav-link:hover {
+        background: linear-gradient(to bottom, $font-accent-color, $bg-secondary 80%);
+    }
+
+    .action-field-container {
+        width: 100%;
+        min-height: 10vh;
+        margin: 0;
+        border-radius: 1em;
+        background-color: $bg-secondary;
     }
 }

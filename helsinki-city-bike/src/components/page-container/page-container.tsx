@@ -3,12 +3,15 @@ import Nav from "../nav/nav"
 
 const PageContainer = () => {
     return (
-        <div className="row">
-            <div className="col d-flex page-container">
-                <Nav />
-                <ActionField />
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-lg-2 col-md-12 d-flex page-container">
+                    <Nav />
+                </div>
+                <div className="col">
+                    <ActionField />
+                </div>
             </div>
-            
         </div>
     )
 }

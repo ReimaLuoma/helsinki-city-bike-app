@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
         <>
-        <div className='nav-container'>
+        <div className='col nav-container'>
             <Link to={`/data-import`}>
                 <div className="nav-link">
                     <img src={importCSV} alt='' />
