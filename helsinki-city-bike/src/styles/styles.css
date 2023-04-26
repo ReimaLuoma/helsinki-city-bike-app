@@ -127,13 +127,21 @@ a {
 /* Nav */
 .nav-container {
   margin: 10em 0;
+  text-align: center;
 }
 
 .nav-link {
   width: 20vw;
   height: 10vh;
+  background-color: #8cc487;
+  margin: 0 0 0 -1vw;
+  padding: 1em 0;
+}
+
+.nav-link-active {
+  width: 20vw;
+  height: 30vh;
   background-color: whitesmoke;
-  text-align: center;
   margin: 0 0 0 -1vw;
   padding: 1em 0;
 }
@@ -143,7 +151,7 @@ a {
 }
 
 .nav-link:hover {
-  background: linear-gradient(to right, #ff6f69, whitesmoke 80%);
+  background: linear-gradient(to right, #8cc487, whitesmoke 50%);
 }
 
 /* Action field */
