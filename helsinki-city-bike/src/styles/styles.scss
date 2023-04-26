@@ -82,7 +82,7 @@ h3 {
 
 .card {
     background-color: $bg-secondary;
-    min-width: 20rem;
+    min-width: 32rem;
     height: fit-content;
     margin: 5em 2em;
     padding: 2em 0;
@@ -91,10 +91,14 @@ h3 {
     color: $font-accent-color;
 }
 
+.card h2 {
+    margin: 0 2rem;
+}
+
 .card img {
     transform: scale(1.5);
     opacity: 67%;
-    margin: 5em auto 1em;
+    margin: 5em auto 2em;
 }
 
 .card:hover {
@@ -186,18 +190,25 @@ a {
     }
 
     .card {
-        min-width: 5vw;
-        margin: 1rem 0.95rem;
-        padding: 0 0.5rem;
+        min-width: 2vw;
+        width: 42vw;
+        margin: 1rem;
+        padding: 0;
     }
 
     .mobile-card-start {
         justify-content: start !important;
     }
+
+    .card h2 {
+        margin: 0;
+        font-size: 2em;
+    }
     
     .card img {
-        transform: scale(1);
+        transform: scale(.5);
         margin: 2rem;
+        padding: 0;
     }
 
     .page-container {

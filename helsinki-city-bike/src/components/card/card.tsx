@@ -11,7 +11,7 @@ const Card = ({ header, img, alt, link }: cardProps) => {
     return (
         <Link to={link}>
             <div className="card">
-                <h3><b>{header}</b></h3>
+                <h2><b>{header}</b></h2>
                 <img src={img} alt={alt} />
             </div>
         </Link>
