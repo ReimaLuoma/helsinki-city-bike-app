@@ -9,17 +9,24 @@ Styles:
 html {
   background-color: #8cc487;
   color: #59595a;
-  font-size: 67.5%;
+  font-size: 62.5%;
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
   float: none;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-size: 1.6em;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
   background-color: #8cc487;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* HEADERS */
@@ -47,8 +54,8 @@ h3 {
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 101%;
-  margin: 2% 0 0 0;
+  width: 101vw;
+  margin: 5vh 0 0 -0.5vw;
 }
 
 .logo-img img:first-child {
@@ -147,22 +154,22 @@ a {
 /* MOBILE */
 @media (hover: none) and (pointer: coarse) {
   .logo-base {
-    width: 105%;
-    margin: 5% 0 0 -2.5%;
+    width: 105vw;
+    margin: 5vh 0 1rem -2.5vw;
   }
   .logo-img:first-child {
     transform: scale(0.3);
   }
   .card {
-    min-width: 5rem;
-    margin: 1em 0.95em;
-    padding: 0 0.5em;
+    min-width: 5vw;
+    margin: 1rem 0.95rem;
+    padding: 0 0.5rem;
   }
   .mobile-card-start {
     justify-content: start !important;
   }
   .card img {
     transform: scale(1);
-    margin: 1em;
+    margin: 2rem;
   }
 }/*# sourceMappingURL=styles.css.map */
