@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 type cardProps = {
     header: string,
@@ -9,12 +9,12 @@ type cardProps = {
 
 const Card = ({ header, img, alt, link }: cardProps) => {
     return (
-        <Link to={link}>
+        <NavLink to={link}>
             <div className="card">
                 <h2><b>{header}</b></h2>
                 <img src={img} alt={alt} />
             </div>
-        </Link>
+        </NavLink>
     )
 }
 

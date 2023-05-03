@@ -19,6 +19,13 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": [
+    "src",
+    "src/components/logo"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": [
+    "vite/client",
+    "vitest/globals"
+  ]
 }
