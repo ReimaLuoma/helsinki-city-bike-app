@@ -8,7 +8,7 @@ const Nav = () => {
 
     return (
         <>
-        <nav className='col nav-container'>
+        <nav className='col nav-container' data-testid='nav'>
             <NavLink to='/data-import' className="nav-link">
                     <img src={importCSV} alt='' />
             </NavLink>

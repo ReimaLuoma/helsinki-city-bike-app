@@ -28,33 +28,32 @@ describe('<Card />', () => {
       <BrowserRouter>
         <Card {...props} />
       </BrowserRouter>
-    ).container;
-    container = renderResult.container;
+    );
+    container = renderResult.container.firstChild as HTMLElement;
   });
 
   test('renders the component', () => {
-    expect(screen.getByRole('link', { container })).toBeInTheDocument();
+    expect(screen.getByRole('link')).toBeInTheDocument();
   });
 
   test('renders the header', () => {
-    expect(screen.getByRole('heading', { container })).toHaveTextContent('Card header');
+    expect(screen.getByRole('heading')).toHaveTextContent('Card header');
   });
 
   test('renders the image with correct props', () => {
-    expect(screen.getByRole('img', { container })).toHaveAttribute('src', 'https://example.com/image.jpg');
-    expect(screen.getByRole('img', { container })).toHaveAttribute('alt', 'Image alt');
+    expect(screen.getByRole('img')).toHaveAttribute('src', 'https://example.com/image.jpg');
+    expect(screen.getByRole('img')).toHaveAttribute('alt', 'Image alt');
   });
 
   test('renders a NavLink with the correct props', () => {
-    expect(screen.getByRole('link', { container })).toHaveAttribute('href', '/card');
+    expect(screen.getByRole('link')).toHaveAttribute('href', '/card');
   });
 
   test('clicking the NavLink navigates to the correct route', () => {
-    /*
-    const { history } = render(<Card {...props} />);
-    const link = screen.getByRole('link', { container });
-    fireEvent.click(link);
-    expect(history.location.pathname).toBe('/card');
-    */
+    
+    render(<BrowserRouter><Card {...props} /></BrowserRouter>);
+    const links = screen.queryAllByTestId('card-link');
+    fireEvent.click(links[0]);
+    expect(window.location.pathname).toBe('/card');
   });
 });

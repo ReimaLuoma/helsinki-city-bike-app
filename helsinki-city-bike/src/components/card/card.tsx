@@ -9,7 +9,7 @@ type cardProps = {
 
 const Card = ({ header, img, alt, link }: cardProps) => {
     return (
-        <NavLink to={link}>
+        <NavLink to={link} data-testid='card-link'>
             <div className="card">
                 <h2><b>{header}</b></h2>
                 <img src={img} alt={alt} />
